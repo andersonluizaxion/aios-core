@@ -1,0 +1,26 @@
+name: "Concierge IA"
+industry: "Tecnologia / SaaS / SDR com IA"
+website: ""
+
+accounts:
+  meta_ad_account_id: ""
+  google_ads_customer_id: ""
+  instagram_username: "concierge.ia"
+  ga4_property_id: ""
+
+contacts:
+  primary: ""
+  email: ""
+
+targets:
+  monthly_budget: 0
+  target_cpa: 0
+  target_roas: 0
+  kpi_primary: "leads"
+  kpi_secondary: "demos_agendadas"
+
+notes: |
+  SDR com IA - automatizacao de prospecao e qualificacao de leads.
+  Perfil Instagram com 284 followers (fev/2026).
+  Fase inicial - foco em crescimento de audiencia e geracao de leads.
+  Conta IG conectada ao app "Stark Analytics Bot" via Meta Business Manager.

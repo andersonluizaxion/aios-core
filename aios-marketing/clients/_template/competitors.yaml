@@ -1,0 +1,30 @@
+# Competitors - [Nome do Cliente]
+# Monitoramento de concorrentes (workflow competitor-monitoring.md)
+# Atualizar mensalmente na primeira semana
+
+client: ""
+industry: ""
+last_updated: ""
+
+competitors:
+  # - name: ""
+  #   website: ""
+  #   instagram_username: ""
+  #   instagram_followers: 0
+  #   instagram_er_percent: 0
+  #   active_meta_ads: 0
+  #   active_google_ads: 0
+  #   ad_activity: "low | medium | high"
+  #   strengths:
+  #     - ""
+  #   weaknesses:
+  #     - ""
+  #   strategy_notes: ""
+  #   recent_changes:
+  #     - ""
+  #   monitoring_history:
+  #     # - month: "YYYY-MM"
+  #     #   instagram_followers: 0
+  #     #   instagram_er_percent: 0
+  #     #   active_ads: 0
+  #     #   notes: ""

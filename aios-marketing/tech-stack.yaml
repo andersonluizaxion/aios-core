@@ -1,0 +1,47 @@
+name: aios-marketing
+runtime: node 18+
+cli_pattern: zero-dependency mjs (native fetch, no npm packages)
+
+apis:
+  active:
+    - name: Meta Graph API
+      version: v24.0
+      auth: Long-lived access token (META_ACCESS_TOKEN)
+      cli: bin/meta-ads.mjs
+      docs: https://developers.facebook.com/docs/marketing-apis
+    - name: Google Ads REST API
+      version: v19
+      auth: OAuth2 (developer token + client credentials + refresh token)
+      cli: bin/google-ads.mjs
+      docs: https://developers.google.com/google-ads/api
+    - name: Instagram Graph API
+      version: v24.0
+      auth: Reuses META_ACCESS_TOKEN
+      cli: bin/instagram-analyzer.mjs
+      docs: https://developers.facebook.com/docs/instagram-api
+
+auth_pattern:
+  priority:
+    - Shell environment variables (highest)
+    - Project .env file
+    - aios-marketing/.env
+    - ~/.config/{tool-name}/.env (global, lowest)
+
+output_formats:
+  - table (default, human-readable)
+  - json (machine-readable)
+  - markdown (for reports)
+
+conventions:
+  flags:
+    - "--format=table|json" for output format
+    - "--account=username" for multi-account selection
+    - "--limit=N" for result limits
+    - "--format=table" default in all CLIs
+  values:
+    meta: centavos (R$ 50/dia = 5000)
+    google: micros (R$ 50/dia = 50000000)
+  safety:
+    - All write ops require explicit user confirmation
+    - Max 20% budget increase per day
+    - Campaigns always created as PAUSED

@@ -1,0 +1,3631 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "A8ase",
+      "x": -621,
+      "y": 0,
+      "name": "Component/MktAgentCard",
+      "reusable": true,
+      "width": 320,
+      "fill": "#FFFFFF",
+      "cornerRadius": 14,
+      "stroke": {
+        "thickness": 1,
+        "fill": "#D9E2EC"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#0F172A10",
+        "offset": {
+          "x": 0,
+          "y": 3
+        },
+        "blur": 10
+      },
+      "layout": "vertical",
+      "gap": 10,
+      "padding": 16,
+      "children": [
+        {
+          "type": "frame",
+          "id": "QXLrD",
+          "name": "InfoRow",
+          "width": "fill_container",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pJYag",
+              "name": "Avatar",
+              "width": 48,
+              "height": 48,
+              "cornerRadius": 24,
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "AeZbl",
+              "name": "NameCol",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BcRvA",
+                  "name": "AgentName",
+                  "fill": "#0F172A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "NOME | @agent-id",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "lmgQG",
+                  "name": "AgentDesc",
+                  "fill": "#475569",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Descricao do agente e suas funcoes",
+                  "lineHeight": 1.35,
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "39tZo",
+          "name": "ToolsRow",
+          "gap": 5,
+          "children": [
+            {
+              "type": "frame",
+              "id": "D3lrr",
+              "name": "T1",
+              "width": 24,
+              "height": 24,
+              "fill": "#64748B",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Ckz0j",
+                  "x": 5,
+                  "y": 5,
+                  "name": "TIcon1",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "target",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aOM9r",
+              "name": "T2",
+              "width": 24,
+              "height": 24,
+              "fill": "#64748B",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "2ErQr",
+                  "x": 5,
+                  "y": 5,
+                  "name": "TIcon2",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "globe",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cdiZG",
+              "name": "T3",
+              "width": 24,
+              "height": 24,
+              "fill": "#64748B",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "mq3pK",
+                  "x": 5,
+                  "y": 5,
+                  "name": "TIcon3",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TdDGz",
+              "name": "T4",
+              "width": 24,
+              "height": 24,
+              "fill": "#64748B",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "W8E1W",
+                  "x": 5,
+                  "y": 5,
+                  "name": "TIcon4",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "play",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "noET2",
+              "name": "T5",
+              "width": 24,
+              "height": 24,
+              "fill": "#64748B",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "6Am9P",
+                  "x": 5,
+                  "y": 5,
+                  "name": "TIcon5",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "terminal",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "SVshW",
+      "x": -621,
+      "y": 140,
+      "name": "Component/LegendItem",
+      "reusable": true,
+      "gap": 6,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "YOe2F",
+          "name": "IconBox",
+          "width": 20,
+          "height": 20,
+          "fill": "#64748B",
+          "cornerRadius": 5,
+          "layout": "none",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "azoXv",
+              "x": 3,
+              "y": 3,
+              "name": "Icon",
+              "width": 14,
+              "height": 14,
+              "iconFontName": "circle",
+              "iconFontFamily": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "TLIgk",
+          "name": "Label",
+          "fill": "#475569",
+          "content": "Label",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "5ENqd",
+      "x": 0,
+      "y": 0,
+      "name": "AIOS Marketing Squad",
+      "width": 1100,
+      "height": 2880,
+      "fill": "#F8FBFF",
+      "cornerRadius": 16,
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "inRIW",
+          "x": 350,
+          "y": 20,
+          "name": "SquadHeader",
+          "width": 400,
+          "fill": "#FFFFFF",
+          "cornerRadius": 14,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#D6E3F1"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0F172A14",
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "blur": 16
+          },
+          "layout": "vertical",
+          "gap": 3,
+          "padding": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "WzqbE",
+              "name": "SquadTitle",
+              "fill": "#0F172A",
+              "content": "Marketing Squad",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "l5X7D",
+              "name": "SquadSubtitle",
+              "fill": "#64748B",
+              "content": "9 agentes  |  7 Squads  |  6 Workflows  |  9 Handoffs",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "id": "BsEsb",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Theo",
+          "x": 50,
+          "y": 125,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771644256074.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "THEO | @gestor-trafego"
+            },
+            "lmgQG": {
+              "content": "Gestao de trafego pago via Meta Ads. Campanhas, audiencias, criativos e otimizacao."
+            },
+            "D3lrr": {
+              "fill": "#64748B"
+            },
+            "Ckz0j": {
+              "iconFontName": "target"
+            },
+            "aOM9r": {
+              "fill": "#64748B"
+            },
+            "2ErQr": {
+              "iconFontName": "globe"
+            },
+            "cdiZG": {
+              "fill": "#64748B"
+            },
+            "mq3pK": {
+              "iconFontName": "book-open"
+            },
+            "TdDGz": {
+              "fill": "#64748B"
+            },
+            "W8E1W": {
+              "iconFontName": "play"
+            },
+            "noET2": {
+              "fill": "#64748B"
+            },
+            "6Am9P": {
+              "iconFontName": "terminal"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "A5HVO",
+          "x": 50,
+          "y": 1430,
+          "name": "LegendSection",
+          "width": 767,
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "type": "text",
+              "id": "8UrGA",
+              "name": "LegendTitle",
+              "fill": "#334155",
+              "content": "LEGENDA",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "Y5ukQ",
+              "name": "LegendRow1",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "TkihI",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegPlataformas",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "target"
+                    },
+                    "TLIgk": {
+                      "content": "meta-ads (Skill)"
+                    }
+                  }
+                },
+                {
+                  "id": "sDsJU",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegBudget",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "globe"
+                    },
+                    "TLIgk": {
+                      "content": "agent-browser (Skill)"
+                    }
+                  }
+                },
+                {
+                  "id": "tJDYf",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegScaling",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "book-open"
+                    },
+                    "TLIgk": {
+                      "content": "context7 (MCP)"
+                    }
+                  }
+                },
+                {
+                  "id": "9sx1x",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegAudience",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "play"
+                    },
+                    "TLIgk": {
+                      "content": "playwright (MCP)"
+                    }
+                  }
+                },
+                {
+                  "id": "sijOb",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegInstagram",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "camera"
+                    },
+                    "TLIgk": {
+                      "content": "instagram-analyzer (Skill)"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "H268D",
+              "name": "LegendRow2",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "M2Hfu",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegCTR",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "terminal"
+                    },
+                    "TLIgk": {
+                      "content": "meta-ads CLI (bin/meta-ads.mjs)"
+                    }
+                  }
+                },
+                {
+                  "id": "JSzWN",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegMonitor",
+                  "enabled": true,
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "pen-tool"
+                    },
+                    "TLIgk": {
+                      "content": "Copywriting"
+                    }
+                  }
+                },
+                {
+                  "id": "LoHsT",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegCLI",
+                  "enabled": true,
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "palette"
+                    },
+                    "TLIgk": {
+                      "content": "Design"
+                    }
+                  }
+                },
+                {
+                  "id": "Ls1X5",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegReport",
+                  "enabled": true,
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "chart-bar"
+                    },
+                    "TLIgk": {
+                      "content": "Analytics"
+                    }
+                  }
+                },
+                {
+                  "id": "0PbeX",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegContentGen",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "layers"
+                    },
+                    "TLIgk": {
+                      "content": "content-generation (Skill)"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FnoOS",
+              "name": "LegendRow3",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "H4P9u",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "leg1",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "file-text"
+                    },
+                    "TLIgk": {
+                      "content": "Templates"
+                    }
+                  }
+                },
+                {
+                  "id": "72oIf",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "leg2",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "image"
+                    },
+                    "TLIgk": {
+                      "content": "Criativos"
+                    }
+                  }
+                },
+                {
+                  "id": "Hzpjh",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "leg3",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "ruler"
+                    },
+                    "TLIgk": {
+                      "content": "Platform Specs"
+                    }
+                  }
+                },
+                {
+                  "id": "BQwbe",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "leg4",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "git-branch"
+                    },
+                    "TLIgk": {
+                      "content": "Funil/Atribuicao"
+                    }
+                  }
+                },
+                {
+                  "id": "zhzcF",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "leg5",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "layout-dashboard"
+                    },
+                    "TLIgk": {
+                      "content": "Dashboards"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lHgpk",
+              "name": "LegendRow4",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "eH4OG",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegGoogleAds",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "search"
+                    },
+                    "TLIgk": {
+                      "content": "google-ads (Skill)"
+                    }
+                  }
+                },
+                {
+                  "id": "9sR94",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegGoogleCLI",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "terminal"
+                    },
+                    "TLIgk": {
+                      "content": "google-ads CLI (bin/google-ads.mjs)"
+                    }
+                  }
+                },
+                {
+                  "id": "8ZpvO",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegInstaCLI",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "terminal"
+                    },
+                    "TLIgk": {
+                      "content": "instagram-analyzer CLI (bin/instagram-analyzer.mjs)"
+                    }
+                  }
+                },
+                {
+                  "id": "JTtBO",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegSocialIntel",
+                  "descendants": {
+                    "YOe2F": {
+                      "fill": "#64748B"
+                    },
+                    "azoXv": {
+                      "iconFontName": "eye"
+                    },
+                    "TLIgk": {
+                      "content": "Social Intelligence"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SqCr8",
+              "name": "LegendRow5",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "oiXAI",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegEmail",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "mail"
+                    },
+                    "TLIgk": {
+                      "content": "Email Marketing"
+                    }
+                  }
+                },
+                {
+                  "id": "4Xaoz",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegWhatsApp",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "message-circle"
+                    },
+                    "TLIgk": {
+                      "content": "whatsapp-business (Skill)"
+                    }
+                  }
+                },
+                {
+                  "id": "s33lr",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegCampaignMon",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "activity"
+                    },
+                    "TLIgk": {
+                      "content": "campaign-monitor (Skill)"
+                    }
+                  }
+                },
+                {
+                  "id": "PxncE",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegLinkedIn",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "briefcase"
+                    },
+                    "TLIgk": {
+                      "content": "linkedin-analyzer (Skill)"
+                    }
+                  }
+                },
+                {
+                  "id": "rbAz2",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegTikTok",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "music"
+                    },
+                    "TLIgk": {
+                      "content": "tiktok-analyzer (Skill)"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "L8pHF",
+              "name": "LegendRow6",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "FKwYI",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegAdLibrary",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "shield"
+                    },
+                    "TLIgk": {
+                      "content": "ad-library (Skill)"
+                    }
+                  }
+                },
+                {
+                  "id": "PmdPi",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegCalendar",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "calendar"
+                    },
+                    "TLIgk": {
+                      "content": "Content Calendar"
+                    }
+                  }
+                },
+                {
+                  "id": "uPQXx",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegCRM",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "users"
+                    },
+                    "TLIgk": {
+                      "content": "CRM/Pipeline"
+                    }
+                  }
+                },
+                {
+                  "id": "NsjUu",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegSEO",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "compass"
+                    },
+                    "TLIgk": {
+                      "content": "google-search-console (Skill)"
+                    }
+                  }
+                },
+                {
+                  "id": "V3JtV",
+                  "type": "ref",
+                  "ref": "SVshW",
+                  "name": "LegBacklinks",
+                  "descendants": {
+                    "azoXv": {
+                      "iconFontName": "link"
+                    },
+                    "TLIgk": {
+                      "content": "Backlinks"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "H8NPE",
+          "x": 50,
+          "y": 100,
+          "name": "trafficLabel",
+          "fill": "#334155",
+          "content": "TRAFFIC SQUAD",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 1.2
+        },
+        {
+          "type": "text",
+          "id": "Dtz7g",
+          "x": 50,
+          "y": 290,
+          "name": "creativeLabel",
+          "fill": "#334155",
+          "content": "CREATIVE SQUAD",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 1.2
+        },
+        {
+          "id": "rXrAi",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Cleo",
+          "x": 50,
+          "y": 315,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771561932301.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "CLEO | @copywriter"
+            },
+            "lmgQG": {
+              "content": "Copy para anuncios, landing pages, emails e video scripts. Frameworks de persuasao e testes A/B."
+            },
+            "D3lrr": {
+              "fill": "#64748B"
+            },
+            "Ckz0j": {
+              "iconFontName": "pen-tool"
+            },
+            "aOM9r": {
+              "fill": "#64748B"
+            },
+            "2ErQr": {
+              "iconFontName": "file-text"
+            },
+            "cdiZG": {
+              "fill": "#64748B"
+            },
+            "mq3pK": {
+              "iconFontName": "globe"
+            },
+            "TdDGz": {
+              "fill": "#64748B"
+            },
+            "W8E1W": {
+              "iconFontName": "book-open"
+            },
+            "noET2": {
+              "fill": "#64748B"
+            },
+            "6Am9P": {
+              "iconFontName": "layers"
+            }
+          }
+        },
+        {
+          "id": "Xy01y",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Pixel",
+          "x": 400,
+          "y": 315,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771561939612.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "PIXEL | @designer"
+            },
+            "lmgQG": {
+              "content": "Briefs de criativos, specs de plataforma, estrategia visual e compliance de ads."
+            },
+            "D3lrr": {
+              "fill": "#64748B"
+            },
+            "Ckz0j": {
+              "iconFontName": "palette"
+            },
+            "aOM9r": {
+              "fill": "#64748B"
+            },
+            "2ErQr": {
+              "iconFontName": "image"
+            },
+            "cdiZG": {
+              "fill": "#64748B"
+            },
+            "mq3pK": {
+              "iconFontName": "globe"
+            },
+            "TdDGz": {
+              "fill": "#64748B"
+            },
+            "W8E1W": {
+              "iconFontName": "book-open"
+            },
+            "noET2": {
+              "fill": "#64748B"
+            },
+            "6Am9P": {
+              "iconFontName": "ruler"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "3lxLt",
+          "x": 50,
+          "y": 480,
+          "name": "analyticsLabel",
+          "fill": "#334155",
+          "content": "ANALYTICS SQUAD",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 1.2
+        },
+        {
+          "id": "AwK4O",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Nova",
+          "x": 50,
+          "y": 505,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771561956062.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "NOVA | @data-analyst"
+            },
+            "lmgQG": {
+              "content": "Analise de performance, atribuicao, funil, cohorts, dashboards e insights acionaveis."
+            },
+            "D3lrr": {
+              "fill": "#64748B"
+            },
+            "Ckz0j": {
+              "iconFontName": "chart-bar"
+            },
+            "aOM9r": {
+              "fill": "#64748B"
+            },
+            "2ErQr": {
+              "iconFontName": "git-branch"
+            },
+            "cdiZG": {
+              "fill": "#64748B"
+            },
+            "mq3pK": {
+              "iconFontName": "target"
+            },
+            "TdDGz": {
+              "fill": "#64748B"
+            },
+            "W8E1W": {
+              "iconFontName": "layout-dashboard"
+            },
+            "noET2": {
+              "fill": "#64748B"
+            },
+            "6Am9P": {
+              "iconFontName": "globe"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "dTjZm",
+          "x": 50,
+          "y": 670,
+          "name": "socialLabel",
+          "fill": "#334155",
+          "content": "SOCIAL SQUAD",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 1.2
+        },
+        {
+          "id": "Fir8h",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Saga",
+          "x": 50,
+          "y": 695,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771644262345.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "SAGA | @social-analyst"
+            },
+            "lmgQG": {
+              "content": "Inteligencia de Instagram: analise de conta, benchmark competitivo, padroes de conteudo e estrategia."
+            },
+            "D3lrr": {
+              "fill": "#64748B"
+            },
+            "Ckz0j": {
+              "iconFontName": "camera"
+            },
+            "aOM9r": {
+              "fill": "#64748B"
+            },
+            "2ErQr": {
+              "iconFontName": "globe"
+            },
+            "cdiZG": {
+              "fill": "#64748B"
+            },
+            "mq3pK": {
+              "iconFontName": "book-open"
+            },
+            "TdDGz": {
+              "fill": "#64748B"
+            },
+            "W8E1W": {
+              "iconFontName": "bar-chart"
+            },
+            "noET2": {
+              "fill": "#64748B"
+            },
+            "6Am9P": {
+              "iconFontName": "terminal"
+            }
+          }
+        },
+        {
+          "id": "5RzG6",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Echo",
+          "x": 400,
+          "y": 695,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771644268416.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "ECHO | @social-media-manager"
+            },
+            "lmgQG": {
+              "content": "Gestao operacional de redes sociais. Calendario editorial, captions, adaptacao cross-platform e comunidade."
+            },
+            "Ckz0j": {
+              "iconFontName": "calendar"
+            },
+            "2ErQr": {
+              "iconFontName": "camera"
+            },
+            "mq3pK": {
+              "iconFontName": "music"
+            },
+            "W8E1W": {
+              "iconFontName": "briefcase"
+            },
+            "6Am9P": {
+              "iconFontName": "globe"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "DbjWG",
+          "x": 50,
+          "y": 860,
+          "name": "emailLabel",
+          "fill": "#334155",
+          "content": "EMAIL SQUAD",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 1.2
+        },
+        {
+          "id": "6qzHl",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Iris",
+          "x": 50,
+          "y": 885,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771644280706.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "IRIS | @email-marketing"
+            },
+            "lmgQG": {
+              "content": "Email marketing: automacao, segmentacao, deliverability, nurturing e sequencias de conversao."
+            },
+            "Ckz0j": {
+              "iconFontName": "mail"
+            },
+            "2ErQr": {
+              "iconFontName": "message-circle"
+            },
+            "mq3pK": {
+              "iconFontName": "activity"
+            },
+            "W8E1W": {
+              "iconFontName": "users"
+            },
+            "6Am9P": {
+              "iconFontName": "terminal"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "gWfLk",
+          "x": 50,
+          "y": 1050,
+          "name": "contentLabel",
+          "fill": "#334155",
+          "content": "CONTENT SQUAD",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 1.2
+        },
+        {
+          "id": "higcn",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Atlas",
+          "x": 50,
+          "y": 1075,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771644286672.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "ATLAS | @seo-specialist"
+            },
+            "lmgQG": {
+              "content": "SEO e busca organica: keywords, auditorias tecnicas, content clusters, backlinks e SERP."
+            },
+            "Ckz0j": {
+              "iconFontName": "search"
+            },
+            "2ErQr": {
+              "iconFontName": "chart-bar"
+            },
+            "mq3pK": {
+              "iconFontName": "compass"
+            },
+            "W8E1W": {
+              "iconFontName": "link"
+            },
+            "6Am9P": {
+              "iconFontName": "globe"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "HCbDC",
+          "x": 50,
+          "y": 1240,
+          "name": "growthLabel",
+          "fill": "#334155",
+          "content": "GROWTH SQUAD",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 1.2
+        },
+        {
+          "id": "UDfpT",
+          "type": "ref",
+          "ref": "A8ase",
+          "name": "Nexus",
+          "x": 50,
+          "y": 1265,
+          "descendants": {
+            "pJYag": {
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771644293947.png",
+                "mode": "fill"
+              }
+            },
+            "BcRvA": {
+              "content": "NEXUS | @crm-specialist"
+            },
+            "lmgQG": {
+              "content": "CRM e growth: pipeline, lead scoring, lifecycle, handoff marketing-vendas e retencao."
+            },
+            "Ckz0j": {
+              "iconFontName": "users"
+            },
+            "2ErQr": {
+              "iconFontName": "git-branch"
+            },
+            "mq3pK": {
+              "iconFontName": "activity"
+            },
+            "W8E1W": {
+              "iconFontName": "mail"
+            },
+            "6Am9P": {
+              "iconFontName": "terminal"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "hNE9d",
+          "x": 50,
+          "y": 1650,
+          "name": "Divider1",
+          "width": 1000,
+          "height": 1,
+          "fill": "#D9E2EC"
+        },
+        {
+          "type": "text",
+          "id": "2OHii",
+          "x": 50,
+          "y": 1670,
+          "name": "workflowSectionTitle",
+          "fill": "#0F172A",
+          "content": "CROSS-SQUAD WORKFLOWS",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "700",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "YHkQi",
+          "x": 50,
+          "y": 1690,
+          "name": "workflowSectionSubtitle",
+          "fill": "#64748B",
+          "content": "6 workflows que orquestram colaboracao entre squads",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "iO0Ug",
+          "x": 50,
+          "y": 1720,
+          "name": "WF-CampaignE2E",
+          "width": 1000,
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "id": "jxk8b",
+              "type": "ref",
+              "ref": "XvrUF",
+              "width": "fill_container",
+              "name": "wf1h",
+              "descendants": {
+                "OtQHV": {
+                  "iconFontName": "rocket"
+                },
+                "ybUax": {
+                  "content": "Campaign End-to-End"
+                },
+                "PvPr0": {
+                  "content": "8 stages | 30-90 dias"
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "0lSml",
+              "name": "WF1-Badges",
+              "gap": 6,
+              "padding": [
+                0,
+                4
+              ],
+              "children": [
+                {
+                  "id": "DzhJf",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b1",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644256074.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Theo"
+                    }
+                  }
+                },
+                {
+                  "id": "kf0cJ",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b2",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561956062.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Nova"
+                    }
+                  }
+                },
+                {
+                  "id": "X2x1P",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b3",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644262345.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Saga"
+                    }
+                  }
+                },
+                {
+                  "id": "NPQdm",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b4",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561932301.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Cleo"
+                    }
+                  }
+                },
+                {
+                  "id": "d9L3d",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b5",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561939612.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Pixel"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CZuqO",
+              "name": "WF1-Steps",
+              "gap": 4,
+              "padding": [
+                4,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "rxoqw",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s1",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "01"
+                    },
+                    "yiHXB": {
+                      "content": "Briefing"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "wN1p5",
+                  "name": "a1",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "MoOpf",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s2",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "02"
+                    },
+                    "yiHXB": {
+                      "content": "Research"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "LNguQ",
+                  "name": "a2",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "n7gzv",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s3",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "03"
+                    },
+                    "yiHXB": {
+                      "content": "Creative"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "geJiP",
+                  "name": "a3",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "WHrWO",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s4",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "04"
+                    },
+                    "yiHXB": {
+                      "content": "Setup"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "keMwt",
+                  "name": "a4",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "ILWus",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s5",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "05"
+                    },
+                    "yiHXB": {
+                      "content": "Pre-Launch"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "In6QP",
+                  "name": "a5",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "bDcAW",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s6",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "06"
+                    },
+                    "yiHXB": {
+                      "content": "Launch"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "j2RbG",
+                  "name": "a6",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "05QBZ",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s7",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "07"
+                    },
+                    "yiHXB": {
+                      "content": "Optimize"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "anjwg",
+                  "name": "a7",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "Ubktb",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s8",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "08"
+                    },
+                    "yiHXB": {
+                      "content": "Report"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "1d3JU",
+          "x": 50,
+          "y": 1860,
+          "name": "WF-ClientOnboarding",
+          "width": 1000,
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "id": "WGL7w",
+              "type": "ref",
+              "ref": "XvrUF",
+              "width": "fill_container",
+              "fill": "#10B981",
+              "name": "wf2h",
+              "descendants": {
+                "OtQHV": {
+                  "iconFontName": "user-plus"
+                },
+                "ybUax": {
+                  "content": "Client Onboarding"
+                },
+                "PvPr0": {
+                  "content": "7 steps | 5-10 dias"
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "RBwjL",
+              "name": "WF2-Badges",
+              "gap": 6,
+              "padding": [
+                0,
+                4
+              ],
+              "children": [
+                {
+                  "id": "eJyOi",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b2a",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644256074.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Theo"
+                    }
+                  }
+                },
+                {
+                  "id": "uWP38",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b2b",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561956062.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Nova"
+                    }
+                  }
+                },
+                {
+                  "id": "QGRmh",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b2c",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644262345.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Saga"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sQlIu",
+              "name": "WF2-Steps",
+              "gap": 4,
+              "padding": [
+                4,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "Zwqwv",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s2a",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "01"
+                    },
+                    "yiHXB": {
+                      "content": "Account Access"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "Lw4Iz",
+                  "name": "a2a",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "2vBGM",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s2b",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "02"
+                    },
+                    "yiHXB": {
+                      "content": "Tracking"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "nOseQ",
+                  "name": "a2b",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "1NsW2",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s2c",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "03"
+                    },
+                    "yiHXB": {
+                      "content": "Account Audit"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "yXUy9",
+                  "name": "a2c",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "aC9i0",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s2d",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "04"
+                    },
+                    "yiHXB": {
+                      "content": "Social Analysis"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "5lqZm",
+                  "name": "a2d",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "wXb0U",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s2e",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "05"
+                    },
+                    "yiHXB": {
+                      "content": "Baseline"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "QdMs0",
+                  "name": "a2e",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "s6dPF",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s2f",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "06"
+                    },
+                    "yiHXB": {
+                      "content": "Strategy"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "dFJQp",
+                  "name": "a2f",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "5nxEH",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s2g",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "07"
+                    },
+                    "yiHXB": {
+                      "content": "Campaign Setup"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "blVMw",
+          "x": 50,
+          "y": 2000,
+          "name": "WF-ABTesting",
+          "width": 1000,
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "id": "4Ujcj",
+              "type": "ref",
+              "ref": "XvrUF",
+              "width": "fill_container",
+              "fill": "#F59E0B",
+              "name": "wf3h",
+              "descendants": {
+                "OtQHV": {
+                  "iconFontName": "split"
+                },
+                "ybUax": {
+                  "content": "A/B Testing Cycle"
+                },
+                "PvPr0": {
+                  "content": "6 steps | 14-30 dias"
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "HUigo",
+              "name": "WF3-Badges",
+              "gap": 6,
+              "padding": [
+                0,
+                4
+              ],
+              "children": [
+                {
+                  "id": "gjCmr",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b3a",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561932301.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Cleo"
+                    }
+                  }
+                },
+                {
+                  "id": "RnldH",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b3b",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644256074.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Theo"
+                    }
+                  }
+                },
+                {
+                  "id": "XE6cr",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b3c",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561956062.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Nova"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Upr9w",
+              "name": "WF3-Steps",
+              "gap": 4,
+              "padding": [
+                4,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "TuHEi",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s3a",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "01"
+                    },
+                    "yiHXB": {
+                      "content": "Hypothesis"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "CPcdX",
+                  "name": "a3a",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "E8tuz",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s3b",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "02"
+                    },
+                    "yiHXB": {
+                      "content": "Split Test"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "02jqG",
+                  "name": "a3b",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "PMIxO",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s3c",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "03"
+                    },
+                    "yiHXB": {
+                      "content": "Sample Size"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "XyY87",
+                  "name": "a3c",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "G1P1I",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s3d",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "04"
+                    },
+                    "yiHXB": {
+                      "content": "Analyze"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "NSHyC",
+                  "name": "a3d",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "O0r3E",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s3e",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "05"
+                    },
+                    "yiHXB": {
+                      "content": "Decision"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "PXXTZ",
+                  "name": "a3e",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "b2Cm0",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s3f",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "06"
+                    },
+                    "yiHXB": {
+                      "content": "Next Test"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gsvSt",
+          "x": 50,
+          "y": 2140,
+          "name": "WF-RetargetingSetup",
+          "width": 1000,
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "id": "FVq4D",
+              "type": "ref",
+              "ref": "XvrUF",
+              "width": "fill_container",
+              "fill": "#8B5CF6",
+              "name": "wf4h",
+              "descendants": {
+                "OtQHV": {
+                  "iconFontName": "repeat"
+                },
+                "ybUax": {
+                  "content": "Retargeting Setup"
+                },
+                "PvPr0": {
+                  "content": "7 steps | 3-5 dias"
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "8KIUK",
+              "name": "WF4-Badges",
+              "gap": 6,
+              "padding": [
+                0,
+                4
+              ],
+              "children": [
+                {
+                  "id": "up9M5",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b4a",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644256074.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Theo"
+                    }
+                  }
+                },
+                {
+                  "id": "syYFe",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b4b",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561932301.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Cleo"
+                    }
+                  }
+                },
+                {
+                  "id": "y88m5",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b4c",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561956062.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Nova"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fmgcs",
+              "name": "WF4-Steps",
+              "gap": 4,
+              "padding": [
+                4,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "IQBiY",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s4a",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "01"
+                    },
+                    "yiHXB": {
+                      "content": "Segments"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "GruZR",
+                  "name": "a4a",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "gyXtx",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s4b",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "02"
+                    },
+                    "yiHXB": {
+                      "content": "Map Content"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "x7uRt",
+                  "name": "a4b",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "hOxcj",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s4c",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "03"
+                    },
+                    "yiHXB": {
+                      "content": "Freq. Caps"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "u44kk",
+                  "name": "a4c",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "Nluym",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s4d",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "04"
+                    },
+                    "yiHXB": {
+                      "content": "Exclusions"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "GfVgx",
+                  "name": "a4d",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "ZmyJu",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s4e",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "05"
+                    },
+                    "yiHXB": {
+                      "content": "Budget"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "6NrZI",
+                  "name": "a4e",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "RiOtT",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s4f",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "06"
+                    },
+                    "yiHXB": {
+                      "content": "Cross-Platform"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "l8Ww0",
+                  "name": "a4f",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "Swjc0",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s4g",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "07"
+                    },
+                    "yiHXB": {
+                      "content": "Launch"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NM0jW",
+          "x": 50,
+          "y": 2280,
+          "name": "WF-MonthlyReport",
+          "width": 1000,
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "id": "Q9gNS",
+              "type": "ref",
+              "ref": "XvrUF",
+              "width": "fill_container",
+              "fill": "#EF4444",
+              "name": "wf5h",
+              "descendants": {
+                "OtQHV": {
+                  "iconFontName": "file-bar-chart"
+                },
+                "ybUax": {
+                  "content": "Monthly Report"
+                },
+                "PvPr0": {
+                  "content": "6 steps | 2-3 dias"
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "lAENY",
+              "name": "WF5-Badges",
+              "gap": 6,
+              "padding": [
+                0,
+                4
+              ],
+              "children": [
+                {
+                  "id": "WPVDW",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b5a",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644256074.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Theo"
+                    }
+                  }
+                },
+                {
+                  "id": "4wKBm",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b5b",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561956062.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Nova"
+                    }
+                  }
+                },
+                {
+                  "id": "7LVOs",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b5c",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644262345.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Saga"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jGxP6",
+              "name": "WF5-Steps",
+              "gap": 4,
+              "padding": [
+                4,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "PdJF9",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s5a",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "01"
+                    },
+                    "yiHXB": {
+                      "content": "Pull Meta"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "A9S6y",
+                  "name": "a5a",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "F06Xt",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s5b",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "02"
+                    },
+                    "yiHXB": {
+                      "content": "Pull Google"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "sAXEW",
+                  "name": "a5b",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "4b43C",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s5c",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "03"
+                    },
+                    "yiHXB": {
+                      "content": "Pull Instagram"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "IJnDc",
+                  "name": "a5c",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "OgC2p",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s5d",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "04"
+                    },
+                    "yiHXB": {
+                      "content": "Consolidated"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "gyRDH",
+                  "name": "a5d",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "2Gu4j",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s5e",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "05"
+                    },
+                    "yiHXB": {
+                      "content": "Exec Report"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "tittB",
+                  "name": "a5e",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "m2mwF",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s5f",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "06"
+                    },
+                    "yiHXB": {
+                      "content": "Output"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "73dXZ",
+          "x": 50,
+          "y": 2420,
+          "name": "WF-CompetitorMonitoring",
+          "width": 1000,
+          "layout": "vertical",
+          "gap": 6,
+          "children": [
+            {
+              "id": "FnUd5",
+              "type": "ref",
+              "ref": "XvrUF",
+              "width": "fill_container",
+              "fill": "#06B6D4",
+              "name": "wf6h",
+              "descendants": {
+                "OtQHV": {
+                  "iconFontName": "eye"
+                },
+                "ybUax": {
+                  "content": "Competitor Monitoring"
+                },
+                "PvPr0": {
+                  "content": "5 steps | 2-3 dias"
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "M8yb0",
+              "name": "WF6-Badges",
+              "gap": 6,
+              "padding": [
+                0,
+                4
+              ],
+              "children": [
+                {
+                  "id": "mmvn3",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b6a",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644262345.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Saga"
+                    }
+                  }
+                },
+                {
+                  "id": "q5haC",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b6b",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771644256074.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Theo"
+                    }
+                  }
+                },
+                {
+                  "id": "SG2tk",
+                  "type": "ref",
+                  "ref": "GEejl",
+                  "name": "b6c",
+                  "descendants": {
+                    "3dxaJ": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1771561956062.png",
+                        "mode": "fill"
+                      }
+                    },
+                    "jSV9H": {
+                      "content": "Nova"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cD4g2",
+              "name": "WF6-Steps",
+              "gap": 4,
+              "padding": [
+                4,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "ctvOR",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s6a",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "01"
+                    },
+                    "yiHXB": {
+                      "content": "Social Analysis"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "ls72Q",
+                  "name": "a6a",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "96WpW",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s6b",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "02"
+                    },
+                    "yiHXB": {
+                      "content": "Ad Library"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "gmfIX",
+                  "name": "a6b",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "4xepU",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s6c",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "03"
+                    },
+                    "yiHXB": {
+                      "content": "Strategy Doc"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "TjvcX",
+                  "name": "a6c",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "CHOB6",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s6d",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "04"
+                    },
+                    "yiHXB": {
+                      "content": "Actions"
+                    }
+                  }
+                },
+                {
+                  "type": "icon_font",
+                  "id": "MCHHd",
+                  "name": "a6d",
+                  "width": 12,
+                  "height": 12,
+                  "iconFontName": "chevron-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#94A3B8"
+                },
+                {
+                  "id": "oRuwM",
+                  "type": "ref",
+                  "ref": "C9JFY",
+                  "name": "s6e",
+                  "descendants": {
+                    "JyIKw": {
+                      "content": "05"
+                    },
+                    "yiHXB": {
+                      "content": "Update Profiles"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7LJTX",
+          "x": 50,
+          "y": 2570,
+          "name": "Divider2",
+          "width": 1000,
+          "height": 1,
+          "fill": "#D9E2EC"
+        },
+        {
+          "type": "text",
+          "id": "bLVGi",
+          "x": 50,
+          "y": 2590,
+          "name": "handoffSectionTitle",
+          "fill": "#0F172A",
+          "content": "CROSS-SQUAD HANDOFF PROTOCOLS",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "700",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "NZTXq",
+          "x": 50,
+          "y": 2610,
+          "name": "handoffSectionSubtitle",
+          "fill": "#64748B",
+          "content": "9 protocolos de handoff entre agentes de squads diferentes",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "qY9jT",
+          "x": 50,
+          "y": 2640,
+          "name": "HandoffRow1",
+          "gap": 16,
+          "children": [
+            {
+              "id": "pT4pe",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h1",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644256074.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Theo"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771561932301.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Cleo"
+                },
+                "GJ93N": {
+                  "content": "Brief -> Ad Copy"
+                }
+              }
+            },
+            {
+              "id": "0bKH5",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h2",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771561932301.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Cleo"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771561939612.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Pixel"
+                },
+                "GJ93N": {
+                  "content": "Copy -> Creative Brief"
+                }
+              }
+            },
+            {
+              "id": "P1UE3",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h3",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771561939612.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Pixel"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644256074.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Theo"
+                },
+                "GJ93N": {
+                  "content": "Specs -> Campaign Setup"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "L2nXK",
+          "x": 50,
+          "y": 2710,
+          "name": "HandoffRow2",
+          "gap": 16,
+          "children": [
+            {
+              "id": "DvgmK",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h4",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644256074.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Theo"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771561956062.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Nova"
+                },
+                "GJ93N": {
+                  "content": "Data -> Performance"
+                }
+              }
+            },
+            {
+              "id": "la2m8",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h5",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771561956062.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Nova"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644256074.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Theo"
+                },
+                "GJ93N": {
+                  "content": "Insights -> Optimization"
+                }
+              }
+            },
+            {
+              "id": "3DMvJ",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h6",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644262345.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Saga"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644268416.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Echo"
+                },
+                "GJ93N": {
+                  "content": "Patterns -> Calendar"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7es7d",
+          "x": 50,
+          "y": 2780,
+          "name": "HandoffRow3",
+          "gap": 16,
+          "children": [
+            {
+              "id": "1smRL",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h7",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644262345.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Saga"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771561932301.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Cleo"
+                },
+                "GJ93N": {
+                  "content": "Hooks -> Copy Inspiration"
+                }
+              }
+            },
+            {
+              "id": "ACHeq",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h8",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644280706.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Iris"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644293947.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Nexus"
+                },
+                "GJ93N": {
+                  "content": "Engagement -> Lead Score"
+                }
+              }
+            },
+            {
+              "id": "Me6Zy",
+              "type": "ref",
+              "ref": "OhwTM",
+              "name": "h9",
+              "descendants": {
+                "Yg7KE": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644293947.png",
+                    "mode": "fill"
+                  }
+                },
+                "CKVxj": {
+                  "content": "Nexus"
+                },
+                "GLyQx": {
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1771644280706.png",
+                    "mode": "fill"
+                  }
+                },
+                "cZ8on": {
+                  "content": "Iris"
+                },
+                "GJ93N": {
+                  "content": "Segments -> Sequences"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "C9JFY",
+      "x": -621,
+      "y": 200,
+      "name": "Component/WorkflowStepCard",
+      "reusable": true,
+      "width": 105,
+      "height": 56,
+      "fill": "#FFFFFF",
+      "cornerRadius": 8,
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E2E8F0"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#0F172A08",
+        "offset": {
+          "x": 0,
+          "y": 1
+        },
+        "blur": 4
+      },
+      "layout": "vertical",
+      "gap": 2,
+      "padding": [
+        6,
+        10
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "JyIKw",
+          "name": "StepNumber",
+          "fill": "#94A3B8",
+          "content": "01",
+          "fontFamily": "Inter",
+          "fontSize": 9,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "yiHXB",
+          "name": "StepName",
+          "fill": "#0F172A",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Step Name",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "XvrUF",
+      "x": -621,
+      "y": 280,
+      "name": "Component/WorkflowHeader",
+      "reusable": true,
+      "fill": "#3B82F6",
+      "cornerRadius": [
+        10,
+        10,
+        0,
+        0
+      ],
+      "gap": 10,
+      "padding": [
+        8,
+        14
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon_font",
+          "id": "OtQHV",
+          "name": "WfIcon",
+          "width": 16,
+          "height": 16,
+          "iconFontName": "rocket",
+          "iconFontFamily": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "text",
+          "id": "ybUax",
+          "name": "WfTitle",
+          "fill": "#FFFFFF",
+          "content": "Workflow Name",
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "PvPr0",
+          "name": "WfSubtitle",
+          "fill": "#FFFFFFCC",
+          "content": "N stages | duration",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "GEejl",
+      "x": -621,
+      "y": 330,
+      "name": "Component/AgentBadge",
+      "reusable": true,
+      "fill": "#F1F5F9",
+      "cornerRadius": 11,
+      "gap": 4,
+      "padding": [
+        3,
+        8
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "3dxaJ",
+          "name": "BadgeAvatar",
+          "width": 16,
+          "height": 16,
+          "fill": "#CBD5E1",
+          "cornerRadius": 8,
+          "layout": "none"
+        },
+        {
+          "type": "text",
+          "id": "jSV9H",
+          "name": "BadgeName",
+          "fill": "#475569",
+          "content": "Agent",
+          "fontFamily": "Inter",
+          "fontSize": 9,
+          "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "OhwTM",
+      "x": -621,
+      "y": 370,
+      "name": "Component/HandoffCard",
+      "reusable": true,
+      "width": 320,
+      "height": 56,
+      "fill": "#FFFFFF",
+      "cornerRadius": 10,
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E2E8F0"
+      },
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#0F172A08",
+        "offset": {
+          "x": 0,
+          "y": 1
+        },
+        "blur": 4
+      },
+      "gap": 8,
+      "padding": [
+        10,
+        12
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "xSXoF",
+          "name": "FromAgent",
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Yg7KE",
+              "name": "FromAvatar",
+              "width": 20,
+              "height": 20,
+              "fill": "#CBD5E1",
+              "cornerRadius": 10,
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "CKVxj",
+              "name": "FromName",
+              "fill": "#0F172A",
+              "content": "Agent",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "icon_font",
+          "id": "7l2B0",
+          "name": "Arrow",
+          "width": 14,
+          "height": 14,
+          "iconFontName": "arrow-right",
+          "iconFontFamily": "lucide",
+          "fill": "#94A3B8"
+        },
+        {
+          "type": "frame",
+          "id": "GXTpC",
+          "name": "ToAgent",
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GLyQx",
+              "name": "ToAvatar",
+              "width": 20,
+              "height": 20,
+              "fill": "#CBD5E1",
+              "cornerRadius": 10,
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "cZ8on",
+              "name": "ToName",
+              "fill": "#0F172A",
+              "content": "Agent",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "GJ93N",
+          "name": "HandoffLabel",
+          "fill": "#64748B",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Handoff description",
+          "fontFamily": "Inter",
+          "fontSize": 9,
+          "fontWeight": "500"
+        }
+      ]
+    }
+  ]
+}
