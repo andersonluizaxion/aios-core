@@ -133,8 +133,8 @@ jobs:
 
       - name: Create distribution archive
         run: |
-          mkdir -p dist/@synkra
-          tar -czf dist/@synkra/aios-core-${{ steps.package-version.outputs.version }}.tar.gz \
+          mkdir -p dist
+          tar -czf dist/aios-core-${{ steps.package-version.outputs.version }}.tar.gz \
             --exclude=node_modules \
             --exclude=.git \
             --exclude=dist \
@@ -171,6 +171,8 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        env:
+          HUSKY: '0'
 
       - name: Download build artifacts
         uses: actions/download-artifact@v4
@@ -180,13 +182,16 @@ jobs:
       - name: Set publishing tag
         id: publish-tag
         run: |
-          if [ "${{ github.event.inputs.publish_mode }}" = "stable" ] || [ "${{ github.event_name }}" = "release" ]; then
+          if [ "${{ github.event.inputs.publish_mode }}" = "stable" ] || [ "${{ github.event_name }}" = "release" ] || [ "${{ github.event_name }}" = "push" ]; then
             echo "tag=latest" >> $GITHUB_OUTPUT
           elif [ "${{ github.event.inputs.publish_mode }}" = "beta" ]; then
             echo "tag=beta" >> $GITHUB_OUTPUT
           else
             echo "tag=preview" >> $GITHUB_OUTPUT
           fi
+
+      - name: Publish safety gate (INS-4.10)
+        run: node bin/utils/validate-publish.js
 
       - name: Check if aios-core should be published
         id: should-publish
@@ -236,6 +241,7 @@ jobs:
   publish-aios-install:
     needs: [test, build]
     if: ${{ needs.build.outputs.has_aios_install == 'true' }}
+    continue-on-error: true  # Don't block main publish if @synkra org not yet configured
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -250,7 +256,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: packages/aios-install
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Get aios-install version
         id: pkg-version
